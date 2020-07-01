@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+        <form >
+          <pre>
+          <h2 align="center">HEALTH CARE HOSPITAL<br><h3 align="center" >We Assure Your Safety</h3><h3 align="center">cash memo</h3></h2>
+          Date: <input type="date" name="date" placeholder="dd/mm/yy"><br>
+          Name of the Patient: <input type="text"  id="patientname" name="patientname"><br>
+          Patients Age       : <input type="text"  id="age" name="Patients age"><br>
+          Disease  Name      : <input type="text"  id="age" name="Patients Disease"><br>
+          <input type="radio" name="person" value="employee" checked>Employee&nbsp
+          <input type="radio" name="person" value="student">Student<br>
+          Dependent is:
+          <input type="checkbox" name="dependent" value="wife">Wife&nbsp
+          <input type="checkbox" name="dependent" value="son">Son&nbsp
+          <input type="checkbox" name="dependent" value="daughter">Daughter<br>
+          Amount(In Words)  : Five Thousand Rupees 
+          Amount(In Figures): 5000
+          <p align="right">Signature</p>
+          </pre>
+
+<p align="center"><button  class=button id="id" align="middle" onClick="printpage();">Print</button></p>
+                  </form>
+    <head>
+          <script type="text/javascript">
+    function printpage() {
+        //Get the print button and put it into a variable
+        var printButton = document.getElementById("id");
+        //Set the print button visibility to 'hidden' 
+        printButton.style.visibility = 'hidden';
+        //Print the page content
+        window.print()
+        printButton.style.visibility = 'visible';
+
+    }
+</script>
+        </head>
+    
